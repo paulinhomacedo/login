@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block body %}
+  <h2>Registered Users</h2>
+  <ul>
+    {% for user in user_list %}
+      <li>{{ user.username }}  {{ user.email}}</a></li>
+    {% endfor %}
+  </ul>  
+{% endblock %}
